@@ -1,0 +1,274 @@
+*{
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+  height: 3000px;
+}
+
+/* Primeiro exercício:
+.caixaum{
+  font-size: 5rem;
+  background-color: purple;
+  position: static;
+}
+
+.caixadois{
+  font-size: 5rem;
+  background-color: blue;
+  position: static;
+}
+
+.caixatres{
+  font-size: 5rem;
+  background-color: deeppink;
+  position: static;
+}
+
+Observação position static: os elementos permanecem da mesma forma na página pois esse é o comportamento padrão*/
+
+/* Segundo exercício:
+.caixaum{
+  position: relative;
+  left: 20px;
+  top: 50px;
+  font-size: 5rem;
+  background-color: purple;
+}
+
+.caixadois{
+  font-size: 5rem;
+  background-color: blue;
+}
+
+.caixatres{
+  font-size: 5rem;
+  background-color: deeppink;
+}
+
+Observação position relative: Apenas o elemento selecionado se moveu. Nenhum outro elemento pegou o seu lugar ou foi afetado pelo seu movimento*/
+
+/*Terceiro exercicío:
+.odin{
+  height: 800px;
+  width: 800px;
+  border: solid black;
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative;
+}
+
+.thor{
+  background-color: gold;
+  height: 70px;
+  width: 70px;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 400px;
+  right: 350px;
+}
+
+.loki{
+  background-color: green;
+  height: 70px;
+  width: 70px;
+  position: absolute;
+}
+
+Observação position absolute: O elemento é retirado do fluxo normal da página e perde seu lugar. Ele usa como referência o ancestral posicionado mais próximo. Se não houver nenhum, normalmente usa o bloco inicial da página.*/
+
+
+/* Exercicío quatro:
+header{
+  background-color: gray;
+  height: 100px;
+  width: 1900px;
+  font-size: 20px;
+  position: fixed;
+  top: 0;
+}
+
+main{
+  font-size: 50px;
+  margin-top: 100px;
+}
+
+Observação position fixed: O elemento permanece fixo onde foi posicionado, saindo do fluxo normal, ficando acima dos demais elementos*/
+
+/* Exercicío cinco:
+.header{
+  background-color: blueviolet;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  height: 90px;
+  top: 0;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.header h1{
+  margin-left: 50px;
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-left: 1200px;
+}
+
+.nav a{
+  color: white;
+}
+
+Observação position sticky: O elemento permanece no fluxo normal da página até atingir o limite definido, como top: 0, durante a rolagem. A partir daí, fica grudado nessa posição enquanto respeitar os limites do seu contêiner.*/
+
+/*exercicío seis:
+.thor{
+  height: 100px;
+  width: 100px;
+  background-color: gold;
+  position: absolute;
+  left: -100px;
+}
+
+.loki{
+  height: 100px;
+  width: 100px;
+  background-color: black;
+}
+
+.odin{
+  height: 800px;
+  width: 800px;
+  margin: 0 auto;
+  border: solid;
+  position: relative;
+}
+
+.teste{
+  height: 100px;
+  width: 100px;
+  background-color: purple;
+  position: absolute;
+  left: -110px;
+}
+
+Observação: ao assumir o position absolute, o elemento saiu do fluxo normal, fazendo loki assumir seu lugar. Thor se deslocou para a esquerda, ultrapassando o limite visivel. Dentro de um pai relative, ela ficaria fora da área desse pai*/
+
+/* Sétimo exercício:
+.trans{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.under{
+  height: 100px;
+  width: 100px;
+  background-color: gold;
+  z-index: 1;
+}
+
+.underum{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+Observação: o elemento fixed ficou por cima, como uma camada transparente que afeta a cor dos outros elementos abaixo. O z index é responsável pelas camadas, ao colocar 1, o under fica por cima*/
+
+/* Oitavo exercicío:
+.odin{
+  height: 800px;
+  width: 800px;
+  border: solid black;
+  margin: 100px;
+  position: absolute;
+}
+
+.thor{
+  background-color: gold;
+  height: 70px;
+  width: 70px;
+  position: relative;
+  top: 50px;
+  left: 100px;
+}
+
+.loki{
+  background-color: green;
+  height: 70px;
+  width: 70px;
+  position: relative;
+}
+
+Observação: Thor consegue se mover sem que seu espaço seja perdido pois agora é relative, loki permanece em seu local. Diferente do exercicío 3, onde Thor perderia o lugar para loki, já que thor era absolute*/ 
+
+/* Nono exercicío:
+.bt{
+  background-color: purple;
+  width: 180px;
+  height: 60px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 24px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+.bt a{
+  color: white;
+}
+
+.bt:hover{
+  cursor: pointer;
+}
+
+.tx{
+  width: 500px;
+  background-color: antiquewhite;
+  display: flex;
+  margin: 0 auto;  
+  margin-top: 500px;
+}
+  */
+
+.header{
+  background-color: blueviolet;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  height: 90px;
+  top: 0;
+  align-items: center;
+}
+
+.header h1{
+  margin-left: 50px;
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-left: 1200px;
+}
+
+.nav a{
+  color: white;
+}
+
+.p{
+  width: 500px;
+  margin-top: 30px;
+  font-size: 3rem;
+  margin: 0 auto;
+}
